@@ -1,9 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import InkeepChatButton from '../components/InkeepChatButton.tsx';
+import InkeepSearchBar from '../components/InkeepSearchBar.tsx';
 ---
 
 <Layout title="Welcome to Astro.">
+<InkeepSearchBar client:load />	
 	<main>
 		<svg
 			class="astro-a"
@@ -61,6 +64,7 @@ import Card from '../components/Card.astro';
 			/>
 		</ul>
 	</main>
+	<InkeepChatButton client:load />
 </Layout>
 
 <style>
